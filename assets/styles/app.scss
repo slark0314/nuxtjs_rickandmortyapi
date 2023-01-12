@@ -1,0 +1,37 @@
+.main {
+    display: block;
+    .m_sidebar {
+        width: 200px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+        .ms_content {
+            position: sticky;
+            top: 0;
+            padding: 1em;
+        }
+    }
+    .m_content {
+        width: calc(100% - 200px);
+        padding: 1em;
+        margin-left: auto;
+    }
+}
+
+.m_b_table {
+    .b-table-details {
+        max-height: 0px;
+        overflow: hidden;
+        td, th {
+            padding: 0;
+            p {
+                padding: 0;
+                height: 1px;
+                overflow: hidden;
+                margin: 0;
+            }
+        }
+    }
+}
